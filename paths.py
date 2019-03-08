@@ -65,14 +65,10 @@ def main(data, start=None, end=None, verbose=False):
         (cost(path, costs), path)
         for path in paths(graph, start=start, end=end)
     )
-    if verbose:
-        print('cost\tpath')
-        for result in results:
-            (cost_, length), path = result
-            print(cost_, path, sep='\t')
-    else:
-        ((min_cost, length), path), *_ = results
-        print(min_cost)
+    print('cost\tpath')
+    for result in results:
+        (cost_, length), path = result
+        print(cost_, path, sep='\t')
 
 if __name__ == '__main__':
     import argparse

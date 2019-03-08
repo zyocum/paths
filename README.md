@@ -53,7 +53,6 @@ optional arguments:
   -s START, --start START
                         start node in the graph (default: None)
   -e END, --end END     end node in the graph (default: None)
-  -v, --verbose         show verbose output (default: False)
 $ cat data.txt 
 0 1 3
 0 2 2
@@ -61,19 +60,17 @@ $ cat data.txt
 1 3 4
 2 3 5
 $ ./paths.py data.txt
-4
-$ ./paths.py data.txt -v
 cost	path
 4	(0, 1, 3)
 4	(0, 2, 1, 3)
 5	(0, 2, 3)
 5	(0, 1, 2, 3)
-$ ./paths.py data.txt -v -s 1
+$ ./paths.py data.txt -s 1
 cost	path
 4	(1, 3)
 5	(1, 2, 3)
 5	(1, 0, 2, 3)
-$ ./paths.py data.txt -v -s 1 -e 0
+$ ./paths.py data.txt -s 1 -e 0
 cost	path
 2	(1, 2, 0)
 3	(1, 0)
