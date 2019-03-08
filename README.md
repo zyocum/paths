@@ -29,7 +29,7 @@ An example is as follows:
 
 In the above example, the cost of traversing from node `0` to node `1` is `3`, traversing from node `0` to node `2` is `2`, `1` to `2` is `1`, and so on.  While the input here is sorted by the record values, this is not necessary.  As long as a valid graph is serialized (i.e., there is a path from the start node to the end node), then the program will still find the optimal solution.
 
-The bidirectional graph, when visualized with edges labeld with their costs, looks like this:
+The bidirectional graph, when visualized with edges labeled with their costs, looks like this:
 
 ![graph.png](graph.png)
 
